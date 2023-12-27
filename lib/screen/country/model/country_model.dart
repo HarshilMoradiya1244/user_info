@@ -13,7 +13,7 @@ class CountryNameModel {
     return CountryNameModel(
       common: m1['common'],
       official: m1['official'],
-      nativeNameModel: NativeNameModel.mapToModel(m1['nativename'])
+      nativeNameModel: NativeNameModel.mapToModel(m1['nativeName'])
     );
   }
 }
