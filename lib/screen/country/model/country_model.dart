@@ -1,17 +1,3 @@
-class CountryModel {
-  CountryNameModel? countryNameModel;
-
-  CountryModel({
-    this.countryNameModel,
-  });
-
-  factory CountryModel.mapToModel(Map m1) {
-    return CountryModel(
-      countryNameModel: CountryNameModel.mapToModel(m1['name']),
-    );
-  }
-}
-
 class CountryNameModel {
   String? common, official;
 

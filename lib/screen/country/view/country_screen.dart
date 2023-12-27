@@ -43,11 +43,11 @@ class _CountryScreenState extends State<CountryScreen> {
           itemBuilder: (context, index) {
             return ListTile(
               leading: Text(
-                '${providerw!.country[index].countryNameModel!.common}.',
+                '${providerw!.country[index].common}.',
                 style: TextStyle(color: black, fontSize: 15),
               ),
               title: Text(
-                '${providerw!.country[index].countryNameModel!.nativeNameModel!.engModel!.official}',
+                '${providerw!.country[index].nativeNameModel!.engModel!.official}',
                 style: TextStyle(
                     fontWeight: FontWeight.bold, color: black, fontSize: 20),
               ),
