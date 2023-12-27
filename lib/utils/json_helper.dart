@@ -16,8 +16,10 @@ class JsonHelper {
   Future<List<CountryNameModel>> CountryToList() async {
     var jsonString = await rootBundle.loadString('assets/json/country.json');
     List post = jsonDecode(jsonString);
-    List<CountryNameModel> modelList =
-    post.map((e) => CountryNameModel.mapToModel(e)).toList();
+
+    // post.map((e) => print(e['name'])).toList();
+
+    List<CountryNameModel> modelList = post.map((e) => CountryNameModel.mapToModel(e['name'])).toList();
     return modelList;
   }
 }

@@ -1,19 +1,19 @@
 class CountryNameModel {
   String? common, official;
 
-  NativeNameModel? nativeNameModel;
+  // NativeNameModel? nativeNameModel;
 
   CountryNameModel({
     this.common,
     this.official,
-    this.nativeNameModel,
+    // this.nativeNameModel,
   });
 
   factory CountryNameModel.mapToModel(Map m1) {
     return CountryNameModel(
       common: m1['common'],
       official: m1['official'],
-      nativeNameModel: NativeNameModel.mapToModel(m1['nativeName'])
+      // nativeNameModel: NativeNameModel.mapToModel(m1['nativeName'])
     );
   }
 }
@@ -27,7 +27,7 @@ class NativeNameModel {
 
   factory NativeNameModel.mapToModel(Map m1) {
     return NativeNameModel(
-      engModel: EngModel.mapToModel(m1['common']),
+      // engModel: EngModel.mapToModel(m1['eng']),
     );
   }
 }
