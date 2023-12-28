@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:user_info/screen/country/provider/country_provider.dart';
 import 'package:user_info/screen/user/provider/user_provider.dart';
+import 'package:user_info/screen/user_info/provider/userinfo_provider.dart';
 import 'package:user_info/utils/app_routes.dart';
 
 void main() {
@@ -19,6 +20,9 @@ void main() {
         ),
         ChangeNotifierProvider(
           create: (context) => CountryProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => UserInfoProvider(),
         ),
 
       ],

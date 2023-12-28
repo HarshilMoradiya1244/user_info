@@ -47,6 +47,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontSize: 22, fontWeight: FontWeight.bold),
                 ),
               ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'info');
+                },
+                child: const Text(
+                  'User Info',
+                  style:TextStyle(
+                      fontSize: 22, fontWeight: FontWeight.bold),
+                ),
+              ),
+
 
             ],
           ),
